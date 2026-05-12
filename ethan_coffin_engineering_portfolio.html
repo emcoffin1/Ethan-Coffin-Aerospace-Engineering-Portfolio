@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ethan Coffin - Aerospace Engineering Portfolio</title>
+  <style>
+    :root { --ink:#17191c; --muted:#59616a; --panel:#f3f5f6; --line:#c7c9cc; --navy:#14213d; --teal:#0f766e; --gold:#b7791f; }
+    body { margin:0; background:#e9ecef; color:var(--ink); font-family:Inter, Arial, sans-serif; }
+    main { max-width:1180px; margin:0 auto; padding:28px; }
+    .cover, .sheet { background:white; min-height:690px; margin:0 0 26px; padding:42px; box-sizing:border-box; box-shadow:0 12px 30px rgba(0,0,0,.10); }
+    .cover { display:grid; grid-template-columns:1.2fr .9fr; gap:38px; }
+    h1 { font-size:46px; line-height:1; margin:0 0 10px; letter-spacing:0; }
+    h2 { font-size:30px; margin:0 0 7px; letter-spacing:0; }
+    h3 { font-size:13px; text-transform:uppercase; letter-spacing:0; color:var(--navy); margin:18px 0 7px; }
+    p, li { font-size:14px; line-height:1.46; }
+    .title { color:var(--navy); font-size:18px; margin:0 0 14px; }
+    .meta { color:var(--muted); font-size:13px; margin:4px 0; }
+    .tagline { margin-top:28px; max-width:520px; font-size:16px; }
+    .rule { width:180px; height:4px; background:var(--teal); margin:24px 0; }
+    .cover-side, .visual-panel { background:var(--panel); padding:22px; }
+    .index a { display:grid; grid-template-columns:42px 1fr; gap:12px; color:var(--ink); text-decoration:none; padding:10px 0; border-bottom:1px solid var(--line); font-size:14px; }
+    .index span, .kicker { color:var(--teal); font-weight:700; text-transform:uppercase; font-size:12px; }
+    .sheet { display:grid; grid-template-columns:1.12fr .88fr; gap:28px; page-break-after:always; }
+    .story { padding-right:10px; }
+    ul { padding-left:20px; }
+    .tags span { display:inline-block; border:1px solid var(--line); background:white; padding:5px 8px; margin:0 6px 6px 0; font-size:12px; }
+    .figure { margin:0 0 16px; }
+    .figure img { width:100%; max-height:270px; object-fit:contain; background:white; border:1px solid var(--line); padding:8px; box-sizing:border-box; }
+    .figure.wide img { max-height:165px; }
+    figcaption { color:var(--muted); font-size:12px; line-height:1.35; margin-top:6px; font-style:italic; }
+    .empty { color:var(--muted); font-style:italic; }
+    @media (max-width:850px) { .cover, .sheet { grid-template-columns:1fr; min-height:auto; padding:26px; } main { padding:12px; } h1 { font-size:36px; } }
+  </style>
+</head>
+<body>
+<main>
+  <section class="cover">
+    <div>
+      <h1>Ethan Coffin</h1>
+      <p class="title">Aerospace Engineering Portfolio</p>
+      <p class="meta">(951) 595-5611 | emcoffin@gmail.com | Long Beach, CA</p>
+      <p class="meta">B.S. Aerospace Engineering, California State University Long Beach, Expected Fall 2026 | GPA 3.64 | CSWP</p>
+      <div class="rule"></div>
+      <p class="tagline">Mechanical design, structures, propulsion integration, and test systems for flight-like hardware.</p>
+      <h3>Focus Areas</h3>
+      <ul><li>Structural design and validation</li><li>Propulsion and fluid-system integration</li><li>Manufacturing documentation and vehicle assembly planning</li><li>Instrumentation, DAQ, and static-fire test support</li><li>Python engineering tools for trade studies and first-principles analysis</li></ul>
+    </div>
+    <aside class="cover-side">
+      <h3>Project Index</h3>
+      <div class="index"><a href='#project-01'><span>01</span>Aurora Lander Vehicle</a><a href='#project-02'><span>02</span>Beach Launch Team Structures and Vehicle Integration</a><a href='#project-03'><span>03</span>3D Frame Analysis Solver</a><a href='#project-04'><span>04</span>Rocket Engine Generator and Regenerative Cooling Analysis</a><a href='#project-05'><span>05</span>LOX/RP-1 Pintle Injector Structural Validation</a><a href='#project-06'><span>06</span>Static-Fire Test Instrumentation and Avionics Concepts</a></div>
+      <h3>Skills Snapshot</h3>
+      <ul><li><strong>Design and CAD:</strong> SolidWorks CSWP, Onshape, assembly design, GD&amp;T, manufacturing documentation</li><li><strong>Structures:</strong> FEA, global stiffness method, load paths, area moment of inertia trades, NASA-STD-5001 concepts</li><li><strong>Propulsion and Thermal:</strong> fluid systems, pressure drop, regenerative cooling, Bartz correlation, Ansys Fluent</li><li><strong>Test and Instrumentation:</strong> LabJack T-7 Pro, pressure transducers, load cells, sensor integration, static-fire support</li><li><strong>Programming:</strong> Python, C++, MATLAB, microcontrollers, engineering analysis tools</li></ul>
+    </aside>
+  </section>
+  
+            <section class="sheet" id="project-01">
+              <div class="story">
+                <p class="kicker">Project 01</p>
+                <h2>Aurora Lander Vehicle</h2>
+                <p class="meta">Flight-like vehicle design / team leadership | Chief Engineer / Project Manager</p>
+                <div class="rule"></div>
+                <h3>Overview</h3><p>Collegiate lander project developing a 50 m hop-capable vehicle with structures, propulsion, GNC, controls, and test planning across a 12-person team.</p>
+                <h3>Objective</h3><p>Translate mission-level goals into a vehicle design that balances propulsion capability, structural load paths, thermal protection, controllability, and integration constraints.</p>
+                <h3>Process</h3><ul><li>Led full-system and vehicle design across structures, propulsion, GNC, controls, and test planning.</li><li>Directed mechanical design for a custom 800 lbf throttleable engine capable of throttling to 35 percent thrust.</li><li>Selected and integrated valves, regulators, pressure transducers, tanks, and test setup for propulsion-system development.</li><li>Performed coupled thermal analysis to size fire barriers and mitigate propellant-tank heat soak.</li></ul>
+                <h3>Outcome / Evidence</h3><ul><li>Leadership ownership of 12-person multidisciplinary team.</li><li>System-level lander design covering structures, propulsion, GNC, controls, and testing.</li><li>Thermal and propulsion integration work used in tailored resumes.</li></ul>
+                <h3>Tools</h3><div class="tags"><span>Python</span><span>CAD</span><span>first-principles analysis</span><span>thermal analysis</span><span>trade studies</span></div>
+              </div>
+              <aside class="visual-panel">
+                <h3>Visual Evidence</h3>
+                <figure class='figure'><img src='../Images/Aurora_full_vehicle.png' alt='Full Aurora lander vehicle CAD assembly.'><figcaption>Full Aurora lander vehicle CAD assembly.</figcaption></figure><figure class='figure'><img src='../Images/Aurora_structure_analysis.png' alt='Structural analysis output using global stiffness methods.'><figcaption>Structural analysis output using global stiffness methods.</figcaption></figure><figure class='figure'><img src='../Images/Aurora_material_tradestudy.png' alt='Material and member-diameter trade study for structural concepts.'><figcaption>Material and member-diameter trade study for structural concepts.</figcaption></figure>
+              </aside>
+            </section>
+            
+            <section class="sheet" id="project-02">
+              <div class="story">
+                <p class="kicker">Project 02</p>
+                <h2>Beach Launch Team Structures and Vehicle Integration</h2>
+                <p class="meta">Structures / CAD / manufacturing / flight hardware | Assistant Chief Engineer</p>
+                <div class="rule"></div>
+                <h3>Overview</h3><p>Liquid-rocket student team developing and validating vehicle structures, propulsion support hardware, static-fire restraints, and build documentation.</p>
+                <h3>Objective</h3><p>Design, analyze, manufacture, and document vehicle hardware capable of surviving launch and static-fire environments while keeping mass low.</p>
+                <h3>Process</h3><ul><li>Designed, manufactured, and validated thrust plates, bulkheads, horizontal stringers, and static-fire restraint structures.</li><li>Performed first-principles analysis and FEA to validate structural integrity under launch loads.</li><li>Performed a stringer trade study comparing candidate geometries to increase area moment of inertia while minimizing weight per foot of vehicle structure.</li><li>Authored manufacturing and assembly documentation for individual part fabrication and full-vehicle integration.</li></ul>
+                <h3>Outcome / Evidence</h3><ul><li>Stringer trade study and manufacturing documentation preserved as source project records.</li><li>Hardware ownership spans design, analysis, fabrication planning, assembly, and test support.</li><li>Strong match for spacecraft primary/secondary structure and build documentation roles.</li></ul>
+                <h3>Tools</h3><div class="tags"><span>SolidWorks CSWP</span><span>Ansys Mechanical</span><span>GD&amp;T</span><span>manufacturing documentation</span><span>structural trade studies</span></div>
+              </div>
+              <aside class="visual-panel">
+                <h3>Visual Evidence</h3>
+                <figure class='figure'><img src='../Images/BLT_Mounting_Load_Simulation.png' alt='Ansys FEA result for the vehicle static-fire mounting structure.'><figcaption>Ansys FEA result for the vehicle static-fire mounting structure.</figcaption></figure><figure class='figure'><img src='../Images/vehicle_manufacturing_assembly_fig_01.png' alt='Bulkhead mounting jig used to maintain consistent hole height across parts.'><figcaption>Bulkhead mounting jig used to maintain consistent hole height across parts.</figcaption></figure><figure class='figure'><img src='../Images/vehicle_manufacturing_assembly_fig_03.png' alt='Stringer measuring jig anchored to thrust plate mounting holes for datum-based layout.'><figcaption>Stringer measuring jig anchored to thrust plate mounting holes for datum-based layout.</figcaption></figure>
+              </aside>
+            </section>
+            
+            <section class="sheet" id="project-03">
+              <div class="story">
+                <p class="kicker">Project 03</p>
+                <h2>3D Frame Analysis Solver</h2>
+                <p class="meta">Python engineering tool / structural analysis | Developer</p>
+                <div class="rule"></div>
+                <h3>Overview</h3><p>Custom structural solver supporting rapid lander and launch-vehicle structure evaluation before high-detail FEA.</p>
+                <h3>Objective</h3><p>Create a fast analysis tool to estimate stress, deflection, reaction loads, and factor of safety across beam/frame concepts and boundary conditions.</p>
+                <h3>Process</h3><ul><li>Built a beam and frame solver using the global stiffness method.</li><li>Modeled load distribution and deformation under flight-like structural conditions.</li><li>Automated material and geometry trade studies to compare structural margin, stiffness, mass, manufacturability, and boundary conditions.</li><li>Used the tool to support early design decisions before more detailed simulation or CAD iteration.</li></ul>
+                <h3>Outcome / Evidence</h3><ul><li>Resume database includes global stiffness, stress, deflection, and factor-of-safety claims.</li><li>Useful interview project for explaining fundamentals instead of only software button-clicking.</li></ul>
+                <h3>Tools</h3><div class="tags"><span>Python</span><span>linear algebra</span><span>global stiffness method</span><span>structural margins</span><span>trade studies</span></div>
+              </div>
+              <aside class="visual-panel">
+                <h3>Visual Evidence</h3>
+                <figure class='figure'><img src='../Images/Aurora_structure_analysis.png' alt='Python structural analysis plot used for early vehicle design decisions.'><figcaption>Python structural analysis plot used for early vehicle design decisions.</figcaption></figure><figure class='figure'><img src='../Images/Aurora_material_tradestudy.png' alt='Automated comparison of materials and geometry for mass/stiffness trades.'><figcaption>Automated comparison of materials and geometry for mass/stiffness trades.</figcaption></figure>
+              </aside>
+            </section>
+            
+            <section class="sheet" id="project-04">
+              <div class="story">
+                <p class="kicker">Project 04</p>
+                <h2>Rocket Engine Generator and Regenerative Cooling Analysis</h2>
+                <p class="meta">Thermal-fluid simulation / propulsion analysis | Developer / analyst</p>
+                <div class="rule"></div>
+                <h3>Overview</h3><p>Python tool chain for early rocket engine sizing, nozzle performance, heat flux estimation, and regenerative cooling exploration.</p>
+                <h3>Objective</h3><p>Model engine performance and thermal behavior quickly enough to support concept trades and downstream vehicle simulation.</p>
+                <h3>Process</h3><ul><li>Modeled compressible flow through Rao bell nozzles using isentropic relations and numerical methods.</li><li>Implemented regenerative-cooling models using convective heat transfer, thermal resistance networks, and Bartz heat-transfer estimates.</li><li>Predicted temperature, pressure, and heat-flux distributions along nozzle geometry.</li><li>Validated flow and heat-transfer predictions using Ansys Fluent CFD simulations.</li></ul>
+                <h3>Outcome / Evidence</h3><ul><li>Thermal analysis and propulsion skill pages list regenerative cooling, nozzle flow, and Fluent validation.</li><li>Shows ability to combine first principles, numerical methods, and CFD sanity checks.</li></ul>
+                <h3>Tools</h3><div class="tags"><span>Python</span><span>Ansys Fluent</span><span>heat transfer</span><span>compressible flow</span><span>numerical methods</span></div>
+              </div>
+              <aside class="visual-panel">
+                <h3>Visual Evidence</h3>
+                <figure class='figure'><img src='../Images/Custom_engine_full_view.png' alt='Full isometric CAD view of custom regeneratively cooled engine concept.'><figcaption>Full isometric CAD view of custom regeneratively cooled engine concept.</figcaption></figure><figure class='figure wide'><img src='../Images/Custom_engine_fluent_sim.png' alt='Fluent simulation contour for the custom engine nozzle flow path.'><figcaption>Fluent simulation contour for the custom engine nozzle flow path.</figcaption></figure>
+              </aside>
+            </section>
+            
+            <section class="sheet" id="project-05">
+              <div class="story">
+                <p class="kicker">Project 05</p>
+                <h2>LOX/RP-1 Pintle Injector Structural Validation</h2>
+                <p class="meta">Propulsion component design / FEA / CFD | Designer / analyst</p>
+                <div class="rule"></div>
+                <h3>Overview</h3><p>Injector concept for a LOX-kerosene rocket engine, combining fluid performance, manufacturability, and structural integrity.</p>
+                <h3>Objective</h3><p>Develop a pintle injector concept and check pressure drop, component stress, and structural margin before fabrication or test planning.</p>
+                <h3>Process</h3><ul><li>Designed and analyzed a pintle injector for a LOX-kerosene engine.</li><li>Combined fluid-flow characterization with structural validation.</li><li>Performed CFD and FEA to evaluate injector performance, pressure drop, component stress, and structural integrity.</li><li>Used first-principles sizing and simulation checks to compare candidate geometries.</li></ul>
+                <h3>Outcome / Evidence</h3><ul><li>Repeated across structures and propulsion skill pages as a strong interdisciplinary hardware-analysis project.</li><li>Good bridge between fluids, structures, manufacturing, and test-readiness discussion.</li></ul>
+                <h3>Tools</h3><div class="tags"><span>Ansys Mechanical</span><span>Ansys Fluent</span><span>SolidWorks</span><span>FEA</span><span>CFD</span><span>fluid mechanics</span></div>
+              </div>
+              <aside class="visual-panel">
+                <h3>Visual Evidence</h3>
+                <figure class='figure'><img src='../Images/Pintle_early_CAD.png' alt='Early CAD layout of the LOX/RP-1 pintle injector concept.'><figcaption>Early CAD layout of the LOX/RP-1 pintle injector concept.</figcaption></figure>
+              </aside>
+            </section>
+            
+            <section class="sheet" id="project-06">
+              <div class="story">
+                <p class="kicker">Project 06</p>
+                <h2>Static-Fire Test Instrumentation and Avionics Concepts</h2>
+                <p class="meta">DAQ / embedded systems / test support | Instrumentation and systems contributor</p>
+                <div class="rule"></div>
+                <h3>Overview</h3><p>Rocket static-fire and launch-vehicle support work involving sensor integration, data capture, wiring, and post-test interpretation.</p>
+                <h3>Objective</h3><p>Enable reliable ground-test data so structural and propulsion hardware decisions can be tied to measured behavior.</p>
+                <h3>Process</h3><ul><li>Supported LabJack T-7 Pro data acquisition planning, pressure instrumentation, sensor wiring, and custom harnesses.</li><li>Developed Arduino and ESP32 firmware for temperature, humidity, distance, IMU, and load-cell sensing projects.</li><li>Designed command and telemetry dictionary concepts, sensor-suite approaches, LoRa communication, and initial hardware-in-the-loop test planning.</li><li>Supported hydrostatic pressure testing, static-fire operations, and post-test data review.</li></ul>
+                <h3>Outcome / Evidence</h3><ul><li>The project record includes data acquisition, embedded systems, and load-cell/logger evidence.</li><li>Supports jobs involving test plans, sensor selection, instrumentation, and validation.</li></ul>
+                <h3>Tools</h3><div class="tags"><span>LabJack T-7 Pro</span><span>Arduino</span><span>ESP32</span><span>KiCad</span><span>sensors</span><span>wiring harnesses</span></div>
+              </div>
+              <aside class="visual-panel">
+                <h3>Visual Evidence</h3>
+                <figure class='figure'><img src='../Images/BLT_Static_fire.png' alt='Static-fire test setup used to connect instrumentation, structure, and propulsion data.'><figcaption>Static-fire test setup used to connect instrumentation, structure, and propulsion data.</figcaption></figure><figure class='figure'><img src='../Images/BLT_Mounting_Load_Simulation.png' alt='Static-fire mounting structure analysis tied to thrust measurement setup.'><figcaption>Static-fire mounting structure analysis tied to thrust measurement setup.</figcaption></figure>
+              </aside>
+            </section>
+            
+</main>
+</body>
+</html>
